@@ -111,6 +111,7 @@ pub fn publish(req: &mut dyn RequestExt) -> EndpointResult {
             readme: new_crate.readme.as_deref(),
             repository: repo.as_deref(),
             max_upload_size: None,
+            signature: new_crate.signature.as_deref(),
         };
 
         let license_file = new_crate.license_file.as_deref();
