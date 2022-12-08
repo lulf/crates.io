@@ -91,6 +91,7 @@ pub struct NewCrate<'a> {
     pub readme: Option<&'a str>,
     pub repository: Option<&'a str>,
     pub max_upload_size: Option<i32>,
+    pub signature: Option<&'a str>,
 }
 
 impl<'a> NewCrate<'a> {

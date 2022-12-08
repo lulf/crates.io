@@ -32,6 +32,8 @@ pub struct EncodableCrateUpload {
     pub repository: Option<String>,
     #[serde(default)]
     pub links: Option<String>,
+    #[serde(default)]
+    pub signature: Option<String>,
 }
 
 #[derive(PartialEq, Eq, Hash, Serialize, Debug, Deref)]
